@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Monke Rewards</title>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+
+    <link rel="stylesheet" href="https://returntomonke.io/assets/app-ec371268c52646fbaa660e990096844b.css">
+    <link rel="stylesheet" href="https://returntomonke.io/assets/vendor-402417355e068ab732a4dd13932ec242.css">
+    <link rel="stylesheet" href="claim.css">
+
+
+</head>
+<body>
+<div class="rewards-container">
+    <div id="rewards-total">
+        <h1 class="intro-text"><span id="total-rewards-usdc">A lot of</span> has been awarded to those who have returned to Monke.</h1>
+    </div>
+    <div id="rewards-single">
+        <p class="text-success fw-bolder mb-4 text-uppercase">Check your balance:</p>
+        <div class="form-wrapper">
+            <input id="address-input" type="text" name="address-input" placeholder="Enter a wallet address">
+            <button id="reward-button" class="btn btn-lg btn-success">Check</button>
+        </div>
+        <div>
+            <h2 class="fw-bolder mt-3 fs-1"><span id="rewards-usdc" class="text-success"><br /></span></h2>
+             
+            
+            <div id="claim">
+                <h2 class="fw-bolder mt0 mb-3 fs-1"><a href="https://etherscan.io/token/0x920e4Cc5c50548ED2825de9e380A4d7b2A7Ff143#writeContract" target="_blank">Claim rewards &rarr;</a></h2>
+            </div>
+            <p class="small">Not sure how to claim? Click the above link, connect your <br />wallet to web3 and scroll to function #4 and click <i>write</i>.</p>
+                
+        </div>
+    </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

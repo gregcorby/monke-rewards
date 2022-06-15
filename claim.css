@@ -1,0 +1,87 @@
+body {
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-position: center right;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-color: #1b1d2b;
+}
+
+.intro-text {
+    font-size: 3.75rem;
+    font-weight:300;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    color: #fff !important;
+}
+
+.intro-text span {
+    font-weight: 900;
+    color: #9ed944;
+}
+
+.rewards-container {
+    
+    justify-content: space-between;
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 4%;
+}
+
+#address-input {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    color: #fff;
+}
+
+#address-input:focus-visible {
+    border: 0;
+    outline: 0;
+}
+
+
+
+.form-wrapper {
+    background-color: rgba(0,0,0,.2);   
+    padding: 2px;
+    display: flex;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+@media only screen and (max-width: 500px) {
+    .form-wrapper, .rewards-container {
+        max-width: 100%;
+        width: 100%;
+    }
+    .intro-text {
+        font-size: 2rem;
+    }
+}
+
+p.small {
+    font-size: 0.7em;
+    opacity: .4;
+    margin-top: 10px;
+}
+
+#claim {
+    opacity: 0;
+    left: 20px;
+    position: relative;
+    transition: all 400ms ease-in-out;
+    margin-bottom: 2em;
+}
+
+#claim.show {
+    left: 0px;
+    opacity: 1;
+    bottom:
+}
