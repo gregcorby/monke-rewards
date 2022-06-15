@@ -18,8 +18,7 @@ const button = document.getElementById("reward-button");
 const getRewards = async () => {
     const rewards = await contract.withdrawableDividendOf(userAddress,usdcAddress);
     let rewardsDisplay = document.getElementById("rewards-usdc");
-    const rewardsCopy = "You have ";
-    rewardsDisplay.innerText = rewardsCopy + (rewards/1000000).toFixed(2) + " $USDC"; 
+    rewardsDisplay.innerText = "You have " + (rewards/1000000).toFixed(2) + " $USDC"; 
     claim.classList.add("show");
 };
 const getTotalRewards = async () => {
